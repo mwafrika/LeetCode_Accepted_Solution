@@ -3,20 +3,8 @@
  * @return {boolean}
  */
 var containsDuplicate = function(nums) {
-    let check = 0;
     
-    for(let i=0; i<nums.length; i++){
-        for(let j=i+1; j<nums.length;j++){
-            if(nums[i] === nums[j]){
-               check++
-            }
-        }
-    }
+    const duplicates = (item, index) => nums.indexOf(item) !== index
     
-    if(check >= 1){
-        return true
-    }else{
-        return false
-    }
-    
+    return nums.some(duplicates)
 };
