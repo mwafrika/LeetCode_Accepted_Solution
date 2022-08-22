@@ -5,5 +5,5 @@
 var containsDuplicate = function(nums) {
     
     const duplicates = (item, index) => nums.indexOf(item) !== index
-    return nums.some(duplicates) ? true : false
+    return nums.some(duplicates)
 };
