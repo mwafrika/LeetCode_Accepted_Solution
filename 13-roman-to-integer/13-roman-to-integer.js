@@ -15,7 +15,7 @@ var romanToInt = function(s) {
      
      let result = 0;
     
-    for(let i=0; i<s.length; i++){
+    for(let i=0; i<s.length;i++){
         
         if(table[s[i]] < table[s[i+1]]){
             result -= table[s[i]]
